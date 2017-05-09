@@ -99,10 +99,10 @@ Rails.application.configure do
           s3_region: ENV['AWS_REGION']
       },
 
-    }
-     :s3_host_name => "s3-#{ENV['AWS_REGION']}.amazonaws.com",
-     :url => ":s3_#{ENV['S3_BUCKET_NAME']}"
-    }
+      :s3_host_name => "s3-#{ENV['AWS_REGION']}.amazonaws.com",
+      :url => ":s3_#{ENV['S3_BUCKET_NAME']}"
+
+  }
 
   # SMTP
   config.action_mailer.default_url_options = { host: 'https://bon-voyaj.herokuapp.com'}
